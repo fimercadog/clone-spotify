@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { TrackModel } from '@core/models/tracks.models';
+import { TrackModel } from '@core/models/tracks.model';
 
 @Pipe({
   name: 'orderList'
@@ -27,7 +27,7 @@ export class OrderListPipe implements PipeTransform {
       }
 
     } catch (e) {
-      console.log('Algo paso!');
+      // console.log('Algo paso!');
       return value
 
     }

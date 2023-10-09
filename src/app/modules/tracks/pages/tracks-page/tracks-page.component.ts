@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {TrackService} from '@modules/tracks/services/track.service';
-import {TrackModel} from "@core/models/tracks.models";
+import {TrackModel} from "@core/models/tracks.model";
 import {Subscription} from "rxjs";
 
 @Component({
@@ -36,7 +36,7 @@ export class TracksPageComponent implements OnInit, OnDestroy {
         // console.log('👍👍 tracksRandom',response)
       },error => {
         // alert('💥💥💥Error de conexion')
-        console.log('💥💥💥Error de conexion')
+        // console.log('💥💥💥Error de conexion')
       })
   }
 
